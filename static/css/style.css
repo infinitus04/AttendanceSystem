@@ -1,0 +1,154 @@
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+.myCenter {
+  margin: auto;
+  display: block;
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .myAttTop img {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+.myAttTop {
+  /* border-bottom: 1px solid gray; */
+  /* background-color: ; */
+}
+.myAttTop img {
+  height: 9rem;
+  width: 9rem;
+}
+.myAttTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* 2ND PAGE  MARK ATTENDENCE */
+.myListOfCourse {
+  margin-top: 80px;
+  /* background-color: #1e221e; */
+  /* z-index: 1; */
+}
+
+.courseItermBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* border: 1px solid g; */
+  /* height: 75vh; */
+  height: max-content;
+  overflow-y: scroll;
+  justify-items: center;
+  /* background-color: rgba(245, 245, 245, 0.87); */
+  /* background-color: #1e221e; */
+  padding: 0.2rem 0.7rem;
+}
+
+.itermCo {
+  height: 10rem;
+  width: 21rem;
+  background: linear-gradient(109.6deg, rgb(245, 173, 6) 11.2%, rgb(255, 124, 0) 100.2%);
+  margin: 1rem auto;
+
+  border-radius: 1rem 1rem 0 1rem;
+  color: #333;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  border: 1px solid white;
+  padding: 0.3rem 1rem;
+}
+.itermCo:hover{
+
+      background: radial-gradient(circle at 10% 20%, rgb(255, 131, 61) 0%, rgb(249, 183, 23) 90%);
+      transition: 0.8s;
+      text-decoration: underline;
+}
+.myListStudentTop{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    flex-direction: row;
+    background-color: whitesmoke;
+    font-family: 'Ubuntu';
+    /* position: sticky; */
+
+}
+.makeCenter{
+
+    display: block;
+    margin: auto;
+    margin: 1rem auto;  
+}
+.leftSideStudentTop{
+
+}
+.myFormAction{
+ 
+  
+}
+.myTableAction{
+  
+  margin: 2rem 0.4rem;
+  text-align: center;
+  /* overflow-y: scroll; */
+  /* border: 1px solid black; */
+  /* height: 100px; */
+  margin: auto;
+  font-family: 'Ubuntu';
+   
+}
+
+@media only screen and (min-width: 650px) {
+  .myTableAction{
+    width: 60vw;
+  }
+  .myFormAction{
+    padding: 2rem;
+    background-color: #1e221e;
+  }
+}
+.myDarkTheme{
+    background-color: rgba(26, 25, 25, 0.87);
+    color: white;
+}
+
+
+.selected {
+  background-color: #353935;
+  color: whitesmoke;
+}
+.selected  td{
+  background-color: #353935;
+  color: whitesmoke;
+}
+.selected  th{
+  background-color: #353935;
+  color: whitesmoke;
+}
+
+.bottomOfTable{
+
+  display: flex;
+  justify-content: space-around;
+  margin: 1.2rem auto;
+}
+.formButton{
+
+  height: 2.5rem;
+  width: 5rem;
+  text-align: center;
+
+}

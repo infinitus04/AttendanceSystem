@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <title>List Of Student | Attendance System</title>
+</head>
+<body>
+  <!-- top heading -->
+      <div class="myListStudentTop bg-dark text-light">
+        <h2 class="leftSideStudentTop makeCenter">Cource Name</h2>
+        <h4  id="date" class="rightSideStudentTop makeCenter"></h4>
+    </div>
+    <!-- Custom input -->
+    <div class="input-group m-3" style="width: 90%; margin: 1rem auto; ;">
+      <input  id="myCustomInput"   type="text" class="form-control" placeholder="Sr. no of Absent Students..." aria-label="" aria-describedby="button-addon2">
+      <button class="btn btn-primary type="button" id="button-addon2" onclick="customAttendance()">Enter</button>
+    </div>
+    
+    
+    <!-- Table -->
+    <form class="myFormAction">
+    <table class="table myTableAction">
+        <thead >
+          <tr>
+            <th scope="col">Sr.</th>
+            <th scope="col">Name</th>
+            <th scope="col">Enrollement</th>
+            <th scope="col">Check</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr  onclick="toggleSelection(1)" >
+            <td scope="row">1</td>
+            <td>Praful Sawarkar</td>
+            <td>ET21040</td>
+            <td><input  class="form-check-input" type="checkbox" name="" id="" onchange="updateAttendance(1, this.checked)" disabled></td>
+          </tr>
+          <tr  onclick="toggleSelection(2)" >
+            <td scope="row">2</td>
+            <td>Praful Sawarkar</td>
+            <td>ET21040</td>
+            <td><input  class="form-check-input" type="checkbox" name="" id="" onchange="updateAttendance(2, this.checked)" disabled></td>
+          </tr>
+          <tr  onclick="toggleSelection(3)" >
+            <td scope="row">3</td>
+            <td>Praful Sawarkar</td>
+            <td>ET21040</td>
+            <td><input  class="form-check-input" type="checkbox" name="" id="" onchange="updateAttendance(3, this.checked)" disabled></td>
+          </tr>
+        
+          <tr  onclick="toggleSelection(4)" >
+            <td scope="row">4</td>
+            <td>Praful Sawarkar</td>
+            <td>ET21040</td>
+            <td><input  class="form-check-input" type="checkbox" name="" id="" onchange="updateAttendance(4, this.checked)" disabled></td>
+          </tr>
+          <tr  onclick="toggleSelection(5)" >
+            <td scope="row">5</td>
+            <td>Praful Sawarkar</td>
+            <td>ET21040</td>  
+            <td><input  class="form-check-input" type="checkbox" name="" id="" onchange="updateAttendance(5, this.checked)" disabled></td>
+          </tr>
+     
+      </tbody>
+
+    </table>
+    <div class="bottomOfTable">
+      <button onclick="reverseAll()" class="btn btn-primary formButton"> Reset</button>
+      <button onclick="submitDone()" type="submit" class="btn btn-primary formButton"> Submit</button>
+    </div>
+
+    </form>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="static/js/script.js"></script>
+</html>
