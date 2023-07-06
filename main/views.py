@@ -1,5 +1,6 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, HttpResponse, redirect
 from .models import Class,Student, Subject, Attendance
+from django.contrib.auth import authenticate, login, logout
 # Create your views here.
 
 def classes(request):
@@ -41,4 +42,19 @@ def getatten(request):
     return HttpResponse(atten)
 
 def loginfun(request):
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        print(username)
+        print(password)
+        user = authenticate(username = username,password = password)
+        if user is not None:
+            login(request, user)
+            return redirect('class/')
+        else:
+            print('INVALID USER LOGIN')
+            return redirect('login/')
     return render(request, 'index1.html')
+
+def classcard(request):
+    return render(request, 'classCard4.html')
